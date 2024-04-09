@@ -1,13 +1,17 @@
 function mincost(arr)
 { 
-arr.sort((a,b)=>a-b);
-	let cost = 0;
-	let sum = arr[0];
-	for(let i = 1; i < arr.length; i++){
-		sum += arr[i]
-		cost += sum;
-	}
-	return cost;
+	let tempArr = arr
+	let res = 0;
+	tempArr.sort((a,b)=>a-b);
+	while(temp.length > 1){
+		const n1 = tempArr.shift();
+		const n2 = tempArr.shift();
+		res += n1 + n2
+		tempArr.push(n1+n2);
+		tempArr.sort((a,b)=>a-b);	
+}
+	
+return res;
   
 }
 
