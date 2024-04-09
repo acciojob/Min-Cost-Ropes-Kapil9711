@@ -1,6 +1,6 @@
 function mincost(arr)
 { 
-	let tempArr = arr
+	let tempArr = [...arr];
 	let res = 0;
 	tempArr.sort((a,b)=>a-b);
 	while(temp.length > 1){
